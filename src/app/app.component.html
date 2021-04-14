@@ -82,10 +82,21 @@
         </table>
 
 
-        <h4>Slice</h4>
-        <ul>
-            <li *ngFor="let item of arreglo | slice:5:20"> {{item}}</li>
+        <h3>Slice <small>slice:1:4</small></h3>
+        <ul class="list-group">
+            <li *ngFor="let personaje of personajes | slice:1:4" class="list-group-item">{{personaje}}</li>
         </ul>
+
+        <!--Pipe JSON para mostrar un objeto literal-->
+        <h3>JSON</h3>
+        <hr>
+        <div class="row mb-5">
+            <div class="col">
+                <pre>
+                  {{ heroe | json }}
+                </pre>
+            </div>
+        </div>
 
     </div>
 </div>
