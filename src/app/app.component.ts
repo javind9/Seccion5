@@ -9,7 +9,7 @@ import { resolve } from 'url';
 export class AppComponent {
   
   nombre: string = 'Capitan América';
-
+  nombre2: string = 'JaviEr NaVaRro';
   arreglo = [1,2,3,4,5,6,7,8,9,10];
   personajes: string[] = ['Ironman','Spiderman', 'Thor','Loki','Groot'];
   PI: number = Math.PI;
