@@ -7,6 +7,8 @@ import { registerLocaleData } from '@angular/common';
 import localEs from '@angular/common/locales/es';
 import localFr from '@angular/common/locales/fr';
 import { CapitalizadosPipe } from './pipes/capitalizados.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { PasswordPipe } from './pipes/password.pipe';
 
 registerLocaleData(localEs);
 registerLocaleData(localFr);
@@ -14,7 +16,9 @@ registerLocaleData(localFr);
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadosPipe
+    CapitalizadosPipe,
+    DomseguroPipe,
+    PasswordPipe
   ],
   imports: [
     BrowserModule
